@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Mover : MonoBehaviour
 {
-    [SerializeField] private Vector3 _movementDirection;
+    [SerializeField] private Vector3 _direction;
 
-    void Update()
+    private void Update()
     {
-        transform.Translate(_movementDirection);
+        transform.Translate(_direction);
     }
 }

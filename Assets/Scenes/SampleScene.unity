@@ -249,7 +249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f969c8fad4db9554092df697d98c43af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementDirection: {x: 0, y: 0, z: 0.01}
+  _direction: {x: 0, y: 0, z: 0.04}
 --- !u!135 &884352417
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -422,7 +422,7 @@ Transform:
   m_GameObject: {fileID: 963194225}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 2.72, z: -10}
+  m_LocalPosition: {x: 1.17, y: 2.49, z: -16.55}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -667,6 +667,8 @@ GameObject:
   - component: {fileID: 2117950159}
   - component: {fileID: 2117950158}
   - component: {fileID: 2117950157}
+  - component: {fileID: 2117950163}
+  - component: {fileID: 2117950162}
   - component: {fileID: 2117950161}
   m_Layer: 0
   m_Name: Cube (1)
@@ -770,13 +772,37 @@ MonoBehaviour:
   m_GameObject: {fileID: 2117950156}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2e08847cb8e6eda4a8a08637281ce7a3, type: 3}
+  m_Script: {fileID: 11500000, guid: f969c8fad4db9554092df697d98c43af, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movementDirection: {x: 0, y: 0, z: 0.5}
+  _direction: {x: 0, y: 0, z: 0.04}
+--- !u!114 &2117950162
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117950156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd15c67541949384ebedf3fab49ec631, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _xAngle: 0
-  _yAngle: 1
+  _yAngle: 2
   _zAngle: 0
+--- !u!114 &2117950163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117950156}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9c9500ebeef561049b3b0196263b3475, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   _speedScale: 0.01
 --- !u!1 &2120399404
 GameObject:
